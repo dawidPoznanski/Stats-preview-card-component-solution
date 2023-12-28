@@ -1,0 +1,23 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--heading {
+    margin-block: 50px;
+    margin-inline: 80px;
+    font-family: $font-inter;
+    font-size: 42px;
+    color: $neutral-white;
+  }
+
+  &--text {
+    font-family: $font-lexer;
+    font-size: $text-size-15;
+    color: $transparent-paragraph;
+    margin-inline: 80px;
+  }
+  .purple {
+    color: $primary-violet;
+  }
+}
