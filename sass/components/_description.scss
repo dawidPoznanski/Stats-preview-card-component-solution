@@ -2,20 +2,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 50%;
 
   &--heading {
-    margin-block: 50px;
-    margin-inline: 80px;
+    margin: 50px 80px 25px 80px;
     font-family: $font-inter;
     font-size: 42px;
     color: $neutral-white;
+    font-weight: 700;
   }
 
   &--text {
     font-family: $font-lexer;
     font-size: $text-size-15;
+    font-weight: 400;
     color: $transparent-paragraph;
     margin-inline: 80px;
+    margin-bottom: 40px;
   }
   .purple {
     color: $primary-violet;

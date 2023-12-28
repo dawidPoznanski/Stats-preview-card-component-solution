@@ -4,17 +4,21 @@
   gap: 32px;
   margin-inline: 80px;
   margin-block: 50px;
+  justify-content: space-between;
 
   &--number {
     font-family: $font-inter;
     font-size: 30px;
     color: $neutral-white;
+    font-weight: 700;
   }
 
   &--text {
-    font-family: $font-lexer;
+    font-family: $font-inter;
     font-size: $text-size-15;
+    font-weight: 400;
     color: $transparent-stats;
     text-transform: uppercase;
+    padding-top: 7px;
   }
 }
