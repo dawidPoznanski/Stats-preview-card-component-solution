@@ -13,13 +13,23 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100dvb;
+  height: 100dvh;
+
+  @include view(mobile) {
+    height: 100%;
+  }
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
-  max-width: 65%;
+  max-width: 77%;
   background-color: $primary-desaturated-blue;
   border-radius: 15px;
+
+  @include view(mobile) {
+    flex-direction: column-reverse;
+    min-width: 90%;
+    margin-block: 150px;
+  }
 }

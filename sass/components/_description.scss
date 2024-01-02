@@ -2,14 +2,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 50%;
+  flex: 1;
+
+  @include view(mobile) {
+    align-items: center;
+    text-align: center;
+    margin-block: 15px;
+    margin-inline: 40px;
+  }
 
   &--heading {
-    margin: 50px 80px 25px 80px;
+    margin: 50px 200px 25px 80px;
     font-family: $font-inter;
     font-size: 42px;
     color: $neutral-white;
     font-weight: 700;
+
+    @include view(mobile) {
+      margin-inline: 50px;
+    }
   }
 
   &--text {
@@ -17,8 +28,14 @@
     font-size: $text-size-15;
     font-weight: 400;
     color: $transparent-paragraph;
-    margin-inline: 80px;
-    margin-bottom: 40px;
+    margin: 0 250px 25px 80px;
+    line-height: 1.5;
+    word-spacing: 5px;
+
+    @include view(mobile) {
+      margin-inline: 70px;
+      font-size: 20px;
+    }
   }
   .purple {
     color: $primary-violet;

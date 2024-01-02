@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
-  margin-inline: 80px;
-  margin-block: 50px;
+  margin: 50px 250px 50px 80px;
   justify-content: space-between;
+
+  @include view(mobile) {
+    flex-direction: column;
+    margin: 25px;
+  }
 
   &--number {
     font-family: $font-inter;
